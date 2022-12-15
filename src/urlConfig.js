@@ -1,4 +1,7 @@
-export const api = 'http://localhost:2000/api';
-export const generateUploadImageUrl = function(filename) {
-    return `http://localhost:2000/public/${filename}`;
-}
+const baseUrl = "https://reacttest03-server.herokuapp.com";
+// const baseUrl = "http://localhost:2000";
+
+export const api = `${baseUrl}/api`;
+export const generateUploadImageUrl = (fileName) => {
+  return `${baseUrl}/public/${fileName}`;
+};
